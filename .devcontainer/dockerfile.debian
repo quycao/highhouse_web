@@ -1,0 +1,8 @@
+from node:19.2-bullseye-slim
+
+# Configure to avoid build warnings and errors as described in official VSCode Remote-Containers extension documentation.
+# See https://code.visualstudio.com/docs/remote/containers-advanced#_reducing-dockerfile-build-warnings.
+ENV DEBIAN_FRONTEND=noninteractive
+RUN npm install -g pnpm
+
+EXPOSE 8080
